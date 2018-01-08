@@ -1,0 +1,203 @@
+:root {
+    --primary: rgb(60, 181, 146);
+    --primaryTint: rgb(154, 239, 127);
+    --primaryShade: rgb(57, 159, 147);
+
+    --secondary: rgb(46, 81, 101);
+    --secondaryShade: rgb(39, 51, 72);
+    --secondaryTint: rgb(52, 113, 124);
+
+    --tertiary: rgb(234, 252, 180);
+    --tertiaryShade: rgb(209, 248, 159);
+    --tertiaryTint: rgb(252, 254, 204);
+
+    --black: #140E2C;
+
+    --grey: #58566a;
+    --greyLight: #dadada;
+
+    --white: #f0f0f0;
+}
+
+.primary {
+    background-color: var(--primary);
+}
+
+.secondary {
+    background-color: var(--secondary);
+}
+
+.primaryFg {
+    color: var(--primary);
+}
+
+.secondaryFg {
+    color: var(--secondary);
+}
+
+.primary--shade {
+    background-color: var(--primaryShade);
+}
+
+.primaryFg--shade {
+    color: var(--primaryShade);
+}
+
+.white {
+    background-color: var(--white);
+}
+
+.whiteFg {
+    color: var(--white);
+}
+
+.grey {
+    background-color: var(--grey);
+}
+
+.greyFg {
+    color: var(--grey);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+    color: var(--black);
+    position: relative;
+}
+
+.appWrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 70px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: auto;
+    background-color: var(--white);
+}
+
+.screen {
+    margin: 16px;
+    overflow: auto;
+}
+
+.screenBar {
+    overflow: hidden;
+}
+
+.tile {
+    text-align: center;
+    padding: 4px;
+    background: var(--white);
+    border: 2px solid var(--secondary);
+    color: var(--primary);
+    width: 200px;
+    height: 140px;
+    cursor: pointer;
+    transition: color 250ms ease, border 250ms ease;
+    border-radius: 8px;
+}
+        
+.tile:hover {
+    color: var(--secondaryTint);
+    border: 3px solid var(--secondaryShade);
+}
+
+nav {
+    height: 70px;
+    line-height: 70px;
+    display: flex;
+
+    background-color: var(--primary);
+    background-image: linear-gradient(128deg, rgb(58, 164, 147), rgb(54, 126, 133));
+    overflow: hidden;
+}
+
+nav > h1,
+nav > h2,
+nav > h3,
+nav > p,
+nav > span,
+nav > a {
+    line-height: 70px;
+}
+
+.links {
+    display: inline-flex;
+}
+
+.router-link-active > .navBar-icon {
+    color: var(--tertiaryShade);
+}
+
+.navBar-icon {
+    position: relative;
+    cursor: pointer;
+    color: var(--tertiaryTint);
+}
+
+.navBar-icon:hover {
+    color: var(--primaryTint);
+}
+
+.navBar-icon i {
+    margin: 16px;
+    vertical-align: middle;
+}
+
+.navBar-logo {
+    padding: 8px;
+    display: inline-flex;
+    height: 100%;
+}
+
+.navBar-title {
+    display: inline-flex;
+    margin-right: 40px;
+    margin-left: 16px;
+}
+
+.navBar-title h2 {
+    margin: 0;
+    color: white;
+    letter-spacing: 4px;
+}
+
+.u-imgResp {
+    height: 100%;
+}
+
+.house-summary,
+.book-summary,
+.character-summary {
+    color: var(--tertiaryTint);
+    background: linear-gradient(transparent, transparent), linear-gradient(180deg, var(--primaryShade), var(--secondaryTint) 15%, var(--primary));
+    margin: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 4px 3px 3px var(--grey);
+    transition: background 200ms linear;
+}
+
+.house-summary:hover,
+.book-summary:hover,
+.character-summary:hover {
+    background: linear-gradient(150deg, var(--tertiaryTint), transparent 10%), linear-gradient(180deg, var(--primaryShade), var(--secondaryTint) 15%, var(--primary));
+    box-shadow: 5px 4px 4px var(--grey);
+}

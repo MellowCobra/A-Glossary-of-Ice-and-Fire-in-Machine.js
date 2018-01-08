@@ -1,0 +1,22 @@
+{
+  "name": "glossary-of-ice-and-fire-machine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MellowCobra/A-Glossary-of-Ice-and-Fire-in-Machine.js.git"
+  },
+  "author": "Grayson Dubois @MellowCobra",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/MellowCobra/A-Glossary-of-Ice-and-Fire-in-Machine.js/issues"
+  },
+  "homepage": "https://github.com/MellowCobra/A-Glossary-of-Ice-and-Fire-in-Machine.js#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
